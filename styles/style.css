@@ -114,13 +114,13 @@
   margin-right: 0;
 }
 footer {
-  position: fixed;
   text-align: center;
-  top: 92%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 7%;
+
+  left: 43%;
+  transform: translate(-43%);
   float: right;
-  width: 700px;
+  width: 750px;
 }
 footer p,
 footer a {
