@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: #f7fff7;
+  color: #333533;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header h1 {
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.sections {
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+  margin-top: 40px;
+  margin-right: 300px;
+}
+.sections li {
+  margin-right: 30px;
+}
+.sections li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+.sections li:last-child {
+  margin-right: 0;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 235px;
+}
+.left-section img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  margin-top: 100px;
+}
+.social_media_list {
+  display: flex;
+  flex-direction: row;
+}
+.social_media_list li a {
+  font-size: 25px;
+}
+.social_media_list li {
+  margin-right: 30px;
+}
+.social_media_list li:last-child {
+  margin-right: 0;
+}
+.social_media_links {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-me {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contact-me p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 275px;
+  margin-top: 100px;
+}
+.about {
+  width: 350px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.techs-list {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.techs-i-use {
+  margin-top: 45px;
+}
+.techs-list li {
+  margin-top: 20px;
+  font-size: 35px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.techs-list li :last-child {
+  margin-right: 0;
+}
+footer {
+  position: fixed;
+  text-align: center;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: right;
+  width: 700px;
+}
+footer p,
+footer a {
+  font-size: 14px;
+  background-color: #fed766;
+  margin: 2px;
+}
+footer a {
+  font-weight: 600;
+  font-size: 14px;
+}
+footer a:hover {
+  background-color: #fe4a49;
+  font-size: 18px;
+}
