@@ -20,6 +20,7 @@ header h1 {
   margin-left: 8%;
 }
 nav {
+  display: flex;
   align-items: center;
   margin-right: 5%;
 }
