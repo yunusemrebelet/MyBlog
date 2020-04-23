@@ -8,52 +8,47 @@
   color: #333533;
   font-family: "Saira Semi Condensed", sans-serif;
 }
-.master-container{
+.master-container {
   margin: 0 15% 0 15%;
 }
 header {
   margin: 2% 5% 0 5%;
   display: flex;
-  margin-top: 30px;
   justify-content: space-between;
 }
-header h1{
-  margin-left:8%;
+header h1 {
+  margin-left: 8%;
 }
-nav{
-  margin-right:5%;
+nav {
+  align-items: center;
+  margin-right: 5%;
 }
 .nav-item {
   display: flex;
   flex-direction: row;
- 
 }
-.nav-item li {
-  margin-right: 30px;
-}
+
 .nav-item li a {
   font-size: 18px;
   font-weight: 600;
+  margin-left: 20px;
 }
 
-.content{
-margin: 8% 5% 0 5%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
+.content {
+  margin: 8% 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .left-section {
   display: flex;
   flex-direction: column;
   float: left;
- 
 }
 .left-section img {
   width: 250px;
   height: 250px;
   border-radius: 7%;
- 
 }
 .social_media_list {
   display: flex;
@@ -92,7 +87,6 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
 }
 .about {
   width: 350px;
@@ -138,7 +132,7 @@ align-items: center;
 footer {
   text-align: center;
   margin-top: 7%;
-  width: 750px;
+  width: 80%;
 }
 footer p,
 footer a {
@@ -156,4 +150,13 @@ footer a:hover {
   background-color: #fe4a49;
   font-size: 16px;
   color: white;
+}
+
+@media only screen and (max-width: 1020px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .right-section {
+    margin-bottom: 10%;
+  }
 }
