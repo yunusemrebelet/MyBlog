@@ -113,6 +113,23 @@
 .techs-list li :last-child {
   margin-right: 0;
 }
+.techs-list li .html:hover{
+  color:rgb(233, 81, 35);
+  transition: 200ms all;
+}
+.techs-list li .css:hover{
+  color:rgb(20, 112, 179);
+  transition: 200ms all;
+}
+.techs-list li .js:hover{
+  color:rgb(242, 218, 29);
+  transition: 200ms all;
+}
+.techs-list li .react:hover{
+  color:rgb(0, 160, 205);
+  transition: 200ms all;
+}
+
 footer {
   text-align: center;
   margin-top: 7%;
