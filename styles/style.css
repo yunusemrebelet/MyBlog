@@ -8,44 +8,52 @@
   color: #333533;
   font-family: "Saira Semi Condensed", sans-serif;
 }
-
-.header {
-  display: flex;
-  flex-direction: row;
+.master-container{
+  margin: 0 15% 0 15%;
 }
-.header h1 {
-  margin-left: 300px;
+header {
+  margin: 2% 5% 0 5%;
+  display: flex;
   margin-top: 30px;
+  justify-content: space-between;
 }
-.sections {
+header h1{
+  margin-left:8%;
+}
+nav{
+  margin-right:5%;
+}
+.nav-item {
   display: flex;
   flex-direction: row;
-  margin-left: 400px;
-  margin-top: 40px;
-  margin-right: 300px;
+ 
 }
-.sections li {
+.nav-item li {
   margin-right: 30px;
 }
-.sections li a {
+.nav-item li a {
   font-size: 18px;
   font-weight: 600;
 }
-.sections li:last-child {
-  margin-right: 0;
-}
 
+.content{
+margin: 8% 5% 0 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
 .left-section {
   display: flex;
   flex-direction: column;
   float: left;
-  margin-left: 235px;
+ 
 }
 .left-section img {
   width: 250px;
   height: 250px;
   border-radius: 7%;
-  margin-top: 100px;
+ 
 }
 .social_media_list {
   display: flex;
@@ -84,9 +92,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  float: right;
-  margin-right: 275px;
-  margin-top: 100px;
+ 
 }
 .about {
   width: 350px;
@@ -113,30 +119,25 @@
 .techs-list li :last-child {
   margin-right: 0;
 }
-.techs-list li .html:hover{
-  color:rgb(233, 81, 35);
+.html:hover {
+  color: rgb(233, 81, 35);
   transition: 200ms all;
 }
-.techs-list li .css:hover{
-  color:rgb(20, 112, 179);
+.css:hover {
+  color: rgb(20, 112, 179);
   transition: 200ms all;
 }
-.techs-list li .js:hover{
-  color:rgb(242, 218, 29);
+.js:hover {
+  color: rgb(242, 218, 29);
   transition: 200ms all;
 }
-.techs-list li .react:hover{
-  color:rgb(0, 160, 205);
+.react:hover {
+  color: rgb(0, 160, 205);
   transition: 200ms all;
 }
-
 footer {
   text-align: center;
   margin-top: 7%;
-
-  left: 43%;
-  transform: translate(-43%);
-  float: right;
   width: 750px;
 }
 footer p,
@@ -144,13 +145,15 @@ footer a {
   font-size: 14px;
   background-color: #f9db6d;
   margin: 2px;
+  border-radius: 3px;
 }
 footer a {
   font-weight: 600;
   font-size: 14px;
-  transition: 300ms all;
+  transition: 500ms all;
 }
 footer a:hover {
   background-color: #fe4a49;
-  font-size: 18px;
+  font-size: 16px;
+  color: white;
 }
