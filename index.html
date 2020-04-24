@@ -37,11 +37,9 @@
           <span></span>
         </div>
       </header>
-      <div class="hamburger-menu ">
-        
-          <a target="_blank" href="https://github.com/yunusemrebelet">Fork Me!</a>
-          <a href="./CV/cv.pdf">Download My CV</a>
-      
+      <div class="hamburger-menu">
+        <a target="_blank" href="https://github.com/yunusemrebelet">Fork Me!</a>
+        <a href="./CV/cv.pdf">Download My CV</a>
       </div>
       <!--contents-->
       <div class="content">
@@ -127,4 +125,12 @@
       </center>
     </div>
   </body>
+  <!--Hamburger menu toggle-->
+  <script>
+    const menuButton = document.querySelector(".hamburger-button");
+    const burgerMenu = document.querySelector(".hamburger-menu");
+    menuButton.addEventListener("click", () => {
+      burgerMenu.classList.toggle("hamburger-menu_active");
+    });
+  </script>
 </html>
