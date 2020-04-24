@@ -42,7 +42,7 @@ nav {
 }
 .hamburger-menu{
 display: none;
-
+transition:100ms ease-in;
 }
 .hamburger-menu_active{
   width: 100%;
@@ -54,7 +54,7 @@ display: none;
   border-radius: 4px;
   
 }
-.hamburger-menu_active {
+.hamburger-menu_active a{
   font-size: 14px;
   font-weight: 600;
 }
