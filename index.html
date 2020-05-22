@@ -12,99 +12,117 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="styles/media.css" />
     <link rel="icon" href="/icon/terminal-solid.svg" />
 
     <title>yemreb.</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="logo-text">YEMREB.</h1>
-      <nav>
-        <ul class="sections">
-          <li>
-            <a target="_blank" href="https://github.com/yunusemrebelet"
-              >Fork Me!</a
-            >
-          </li>
-          <li><a href="/CV/cv.pdf">Download My CV</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="master-container">
+      <!--master-->
+      <header>
+        <h1 class="logo-text">YEMREB.</h1>
+        <nav>
+          <ul class="nav-item">
+            <li>
+              <a target="_blank" href="https://github.com/yunusemrebelet"
+                >Fork Me!</a
+              >
+            </li>
+            <li><a href="/CV/cv.pdf">Download My CV</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class="left-section">
-      <figure>
-        <img src="/images/pp.png" alt="profil_photo" />
-      </figure>
-      <div class="contact-me">
-        <p>Contact Me!</p>
+      <!--contents-->
+      <div class="content">
+        <div class="left-section">
+          <figure>
+            <img src="/images/pp.png" alt="profil_photo" />
+          </figure>
+          <div class="contact-me">
+            <p>Contact Me!</p>
+          </div>
+          <div class="social_media_links">
+            <ul class="social_media_list">
+              <li>
+                <a target="_blank" href="https://github.com/yunusemrebelet"
+                  ><i class="fa fa-github-square"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/yemrebelet"
+                  ><i class="fa fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yunus-emre-belet-18790a178/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://medium.com/@yunusemrebelet"
+                  ><i class="fa fa-medium"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <div>
+            <h2>Who Am I?</h2>
+          </div>
+          <div class="about">
+            <p>
+              I am a fourth year student at Ankara Yıldırım Beyazıt University.
+              I also develop frontend using HTML CSS Javascript languages ​​and
+              Vue.js library.
+            </p>
+          </div>
+          <div class="techs-i-use">
+            <h2>Technologies I Use</h2>
+          </div>
+          <div class="techs">
+            <ul class="techs-list">
+              <li>
+                <a href="#"><i class="html lab la-html5"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="css lab la-css3"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="js lab la-js"></i></a>
+              </li>
+              <li>
+                <a href="#"><i id="vue" class="lab la-vuejs"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="social_media_links">
-        <ul class="social_media_list">
-          <li>
-            <a target="_blank" href="https://github.com/yunusemrebelet"
-              ><i class="fa fa-github-square"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/yemrebelet"
-              ><i class="fa fa-twitter-square"></i
-            ></a>
-          </li>
-          <li>
+      <center>
+        <footer>
+          <p>
+            This is an open source project. If you want, you can access the
+            source code of this project or give me advice with this
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/yunus-emre-belet-18790a178/"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://medium.com/@yunusemrebelet"
-              ><i class="fa fa-medium"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+              href="https://github.com/yunusemrebelet/yemreb.pw"
+              >Fork it!</a
+            >
+          </p>
+        </footer>
+      </center>
     </div>
-
-    <div class="right-section">
-      <div>
-        <h2>Who Am I?</h2>
-      </div>
-      <div class="about">
-        <p>
-          I am a fourth year student at Ankara Yıldırım Beyazıt University. I
-          also develop frontend using HTML CSS Javascript languages ​​and React
-          library.
-        </p>
-      </div>
-      <div class="techs-i-use">
-        <h2>Technologies I Use</h2>
-      </div>
-      <div class="techs">
-        <ul class="techs-list">
-          <li>
-            <a href="#"><i class="lab la-html5"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="lab la-css3"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="lab la-js"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="lab la-react"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer>
-      <p>
-        This is an open source project. If you want, you can access the source
-        code of this project or give me advice with this
-        <a target="_blank" href="https://github.com/yunusemrebelet/yemreb.pw"
-          >Fork it!</a
-        >
-      </p>
-    </footer>
   </body>
+  <script>
+    const menuButton = document.querySelector(".hamburger-button");
+    const burgerMenu = document.querySelector(".hamburger-menu");
+    menuButton.addEventListener("click", () => {
+      burgerMenu.classList.toggle("hamburger-menu_active");
+    });
+  </script>
 </html>
